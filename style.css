@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url(img/bg.jpg);
+}
+.header {
+    align-items: center;
+    text-align: center;
+}
+.left {
+    display: inline-block;
+    /*border: 2px solid white;*/
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+.logo {
+    height: 2rem;
+    width: 100%;
+}
+
+.left div {
+    text-align: center;
+}
+
+.left img {
+    width: 136px;
+    filter: invert(100%);
+}
+
+.mid {
+    display: block;
+    width: 36%;
+    margin:29px auto;
+   /* border: 2px solid green;*/
+    top: 20px;
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 31px;
+   /* border: 2px solid yellowgreen;*/
+}
+
+.navbar{
+    display: inline-block;
+}
+.navbar li:hover,
+.navbar li {
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+.btn {
+    margin: 0px 5px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    border: 2px solid white;
+    margin: 50px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+.form-group input{
+    text-align: centre;
+    display: block;
+    width: 100%;
+    padding: 4px 10px;
+    border: 2px solid black;
+    margin: 9px auto;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+
+}
+.carouel {
+    position: relative;
+    width: 50%;
+    margin: 2rem;
+    padding-top: 5vh;
+}
+.boxcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* css for menu item of mid item  */
+.menu {
+    background: black;
+    color: white;
+    margin-top: 6rem;
+    display: none;
+}
+.menuicon {
+    width: 2rem;
+    display: none;
+}
+.menu ul {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 5px;
+}
+.menu ul a {
+    text-decoration: none;
+    color: white;
+}
+.right2 {
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 31px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .container {
+        margin: 20px;
+        width: 100%;
+    }
+    .boxcontainer {
+        display: block;
+    }
+    .carouel {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+    .mid, .right {
+        display: none;
+    }
+    .menuicon {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    
+}
